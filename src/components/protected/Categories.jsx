@@ -15,28 +15,8 @@ export default class Categories extends Component{
     let values = this.props.categoryStore.fullName;
     return(
       <div>
-      <nav className="navbar navbar-light">
-        <div className="container">
-          <Link to="/" className="navbar-brand">
-              React App
-          </Link>
-          <ul className="nav navbar-nav pull-xs-right" style={{float: 'right'}}>
-            <li className="nav-item">
-              <Link to={'/welcome'} className="nav-link">
-                Home
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to={'/signin'} className="nav-link">
-                Sign Out
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <div className="form-group">
-       <Link to={'/addCategory'} className="btn btn-success"  style={{marginLeft:'220px'}}>
+       <Link to={'/addCategory'} className="btn btn-success">
        <span className="glyphicon glyphicon-plus"/>     New
        </Link>
      </div>

@@ -72,7 +72,10 @@ export default class App extends Component {
               </div>
               <ul className="nav navbar-nav pull-right">
                <li>
+                 {this.state.authed
+                   ?
                   <Link to="/categories" className="navbar-brand">Categories</Link>
+                  : ''}
                 </li>
                 <li>
                   {this.state.authed
