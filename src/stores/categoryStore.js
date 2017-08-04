@@ -2,6 +2,7 @@ import { observable, action,computed,mobx,autorun,extendObservable } from 'mobx'
 
 
 class categoryStore {
+  //Instead of hardcoding call API to fetch the values
   @observable values = [{
   name: "onion",
   status: "Active",
@@ -41,6 +42,7 @@ class categoryStore {
     console.log("value.Id::", this.values.id);
     console.log("value.Id::", this.values.name);
     console.log("value.Id::", this.values.status);
+    //call API to save here
     console.log("Category added successfully");
   }
   @action update() {
@@ -48,9 +50,11 @@ class categoryStore {
     console.log("value.Id::", this.values.id);
     console.log("value.Id::", this.values.name);
     console.log("value.Id::", this.values.status);
+    //Call API to save here
     console.log("Category update successfully");
   }
   @action deleteCategory(slug) {
+    //Call API to delete here
     console.log("id::",slug );
   }
 
